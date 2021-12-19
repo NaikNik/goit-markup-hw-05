@@ -103,6 +103,7 @@ header {
     content: '';
     background-image: url(/images/hover.svg);
     background-repeat: no-repeat;
+    padding: ;
 }
 
 .nav-links .nav-item:hover,
