@@ -43,6 +43,7 @@ p {
 /*=======header-footer styles================*/
 
 header {
+    position: relative;
     border-bottom: 1px rgba(236, 236, 236, 1);
 }
 
@@ -94,8 +95,14 @@ header {
     letter-spacing: 0.02em;
 }
 
-.nav-links .nav-item.current {
+.nav-li .nav-item.current {
     color: var(--theme-color);
+}
+
+.nav-item.current::after {
+    content: '';
+    background-image: url(/images/hover.svg);
+    background-repeat: no-repeat;
 }
 
 .nav-links .nav-item:hover,
@@ -295,41 +302,53 @@ header {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/images_main/heroimage.jpg);
 }
 
-.hero-container {
-    position: relative;
-}
+.hero-container {}
 
 
 /*-------------------------------modal-----------------------------*/
 
-.thumb-modal {
-    position: absolute;
-    left: 0px;
-    top: 0px;
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 1600px;
     height: 1024px;
-    rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-.data-modal {
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
+    min-width: 528px;
+    min-height: 581px;
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.data-modal-close {
+.modal-close {
     position: absolute;
     right: 8px;
     top: 8px;
-    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
     border: none;
     border-radius: 50%;
+    background-image: url(/images/ellipse1.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 
@@ -708,7 +727,7 @@ header {
     height: 100%;
 }
 
-.work-example-link :hover,
-.work-example-link :focus {
+.work-example-link:hover,
+.work-example-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }

@@ -57,15 +57,24 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="buttons button-1 data-modal-open" type="button">
+          <button data-modal-open class="buttons button-1" type="button">
             Заказать услугу
           </button>
-          <div class="thumn-modal">
-            <div class="data-modal">
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
               <p></p>
-              <button class="data-modal-close">
-                <svg class="close" width="30" height="30">
-                  <use href="./images/close.svg"></use>
+              <button class="modal-close" type="button" data-modal-close>
+                <svg
+                  width="11"
+                  height="11"
+                  viewBox="0 0 11 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z"
+                    fill="black"
+                  />
                 </svg>
               </button>
             </div>
@@ -241,8 +250,9 @@
                     <li class="staff-social-item">
                         <a href="" class="social-link">
                             <svg class="icon-social">
-                      <use href="images/symbol-defs.svg#icon-twitter"></use>
-                    </svg></a>
+                        <use href="images/symbol-defs.svg#icon-twitter"></use>
+                      </svg> >
+                        </a>
                     </li>
                     <li class="staff-social-item">
                         <a href="" class="social-link">
@@ -458,22 +468,7 @@
                 </div>
             </div>
         </footer>
-        <script src="./js/modal.js">
-            (() => {
-                const refs = {
-                    openModalBtn: document.querySelector('[data-modal-open]'),
-                    closeModalBtn: document.querySelector('[data-modal-close]'),
-                    modal: document.querySelector('[data-modal]'),
-                };
-
-                refs.openModalBtn.addEventListener('click', toggleModal);
-                refs.closeModalBtn.addEventListener('click', toggleModal);
-
-                function toggleModal() {
-                    refs.modal.classList.toggle('is-hidden');
-                }
-            })();
-        </script>
+        <script src="./js/modal.js"></script>
 </body>
 
 </html>
