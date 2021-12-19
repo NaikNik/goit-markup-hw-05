@@ -422,6 +422,8 @@ header {
 .service-name {
     position: absolute;
     width: 370px;
+    top: 224px;
+    left: 0;
     background-color: rgba(47, 48, 58, 0.8);
 }
 
