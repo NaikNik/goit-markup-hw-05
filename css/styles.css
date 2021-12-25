@@ -43,7 +43,7 @@ p {
 /*=======header-footer styles================*/
 
 header {
-    border-bottom: 1px rgba(236, 236, 236, 1);
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
     width: 1600px;
     margin: auto;
 }
@@ -114,7 +114,8 @@ header {
     position: relative;
 }
 
-.nav-item:hover::after {
+
+/* .nav-item:hover::after {
     content: '';
     position: absolute;
     left: 0px;
@@ -127,7 +128,7 @@ header {
     background-repeat: no-repeat;
     transition: transform 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 .nav-links .nav-item:hover,
 .nav-links .nav-item:focus {
@@ -342,7 +343,6 @@ header {
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    border-top: 1px solid;
     background-position: center;
     background-color: rgba(196, 196, 196, 1);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/images_main/heroimage.jpg);
@@ -862,6 +862,7 @@ header {
     height: 100%;
     position: relative;
     overflow: hidden;
+    transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
