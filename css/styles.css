@@ -44,7 +44,6 @@ p {
 
 header {
     border-bottom: 1px solid rgba(236, 236, 236, 1);
-    width: 1600px;
     margin: auto;
 }
 
@@ -94,6 +93,9 @@ header {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current::after {
@@ -104,10 +106,9 @@ header {
     width: 100%;
     height: 4px;
     display: block;
-    background-image: url(/images/hover.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: var(--theme-color);
+    border: solid var(--theme-color);
+    border-radius: 2px;
+    background-color: var(--theme-color);
 }
 
 .nav-li {
@@ -133,8 +134,8 @@ header {
 .nav-links .nav-item:hover,
 .nav-links .nav-item:focus {
     color: #2996f3;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .contact-box-list {
@@ -152,12 +153,15 @@ header {
     display: block;
     margin-right: 10px;
     fill: var(--text-secondary);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-box-item:hover svg {
     fill: var(--theme-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 . address {
@@ -187,6 +191,9 @@ header {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-box-phone {
@@ -198,21 +205,23 @@ header {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    ;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-box-mail:hover,
 .contact-box-mail:focus {
     color: var(--theme-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .contact-box-phone:hover,
 .contact-box-phone:focus {
     color: var(--theme-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .mail-footer,
@@ -265,6 +274,9 @@ header {
     border: none;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-footer {
@@ -274,8 +286,8 @@ header {
 .footer-social-item:hover,
 .footer-social-item:hover:focus {
     background-color: var(--theme-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 
@@ -312,8 +324,8 @@ header {
 .buttons:focus {
     background-color: rgba(24, 140, 232, 1);
     color: var(--text-secondary-lighter);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 
@@ -433,13 +445,16 @@ header {
     height: 50px;
     margin-left: auto;
     margin-right: auto;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-1:hover,
 .button-1:focus {
     background-color: #098af3;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .service-list .item {
@@ -676,6 +691,9 @@ header {
     border: none;
     cursor: pointer;
     background-color: var(--text-secondary-lighter);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link {
@@ -688,20 +706,23 @@ header {
 
 .staff-social-item:hover {
     background-color: var(--theme-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /*  transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .staff-social-item:hover svg {
     fill: rgba(255, 255, 255, 1);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /*   transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .icon-social {
     width: 20px;
     height: 20px;
-    fill: rgba(175, 177, 184, 1)
+    fill: rgba(175, 177, 184, 1);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-social-footer {
@@ -739,6 +760,7 @@ header {
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -765,16 +787,15 @@ header {
 .customers-list .item:hover {
     border-color: var(--theme-color);
     cursor: pointer;
-    transition-property: border-color;
+    /* transition-property: border-color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .customers-list .item:hover svg {
     fill: var(--theme-color);
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 
@@ -806,9 +827,9 @@ header {
 .filter-list .buttons:hover,
 .filter-list .buttons:focus {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition-property: background-color;
+    /*  transition-property: background-color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .work-example-list {
@@ -850,11 +871,13 @@ header {
 }
 
 .work-example-name {
+    position: relative;
     padding: 20px 24px;
     border-bottom: 1px solid rgba(238, 238, 238, 1);
     border-left: 1px solid rgba(238, 238, 238, 1);
     border-right: 1px solid rgba(238, 238, 238, 1);
     border-radius: 0px 0px 4px 4px;
+    z-index: 100;
 }
 
 .work-example-link {
@@ -870,18 +893,24 @@ header {
 .work-example-link:hover,
 .work-example-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .work-example-link:hover .example-overlay {
     transform: translateY(0);
-    transition-duration: 600ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-duration: 600ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.thumb {
+    position: relative;
+    overflow: hidden;
 }
 
 .example-overlay {
     position: absolute;
+    top: 0;
     height: 294px;
     padding: 63px 24px;
     margin-bottom: 0;
@@ -890,6 +919,7 @@ header {
     transition-property: translateY(150%);
     transition-duration: 600ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 50;
 }
 
 .overlay-text {
